@@ -10,19 +10,58 @@ body {
 }
 
 code {
-  font-family: 'Poppins',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Header */
-header {
-  background-image: url(./assets/banner.png);
-  height: 629px;
+/* NavBar */
+.navbar-background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  height: 66px;
+  width: 100%;
+  background: transparent;
 }
 
-.background {
-  height: 100%;
-  background-color: rgba(255, 96, 96, 0.3) !important;
+.background-nav0 {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.background-nav1 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.background-nav2 {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.background-nav3 {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.background-nav4 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.background-nav5 {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.background-nav6 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.background-nav7 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.background-nav8 {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.background-nav {
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .navbar {
@@ -49,9 +88,21 @@ header {
   background-color: red;
 }
 
+/* Header */
+header {
+  background-image: url(./assets/banner.png);
+  height: 668px;
+}
+
+.background {
+  overflow: hidden;
+  height: 100%;
+  background-color: rgba(255, 96, 96, 0.3) !important;
+}
+
 .info {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 210px;
 }
 
 .info h1 {
@@ -82,7 +133,8 @@ header {
   text-transform: capitalize;
 }
 
-.info input {
+.btn {
+  font-size: 20px;
   text-transform: uppercase;
   margin: 20px 0 0 0;
   padding: 15px 30px;
@@ -90,4 +142,115 @@ header {
   background-color: red;
   border: none;
   border-radius: 5px;
+}
+
+/* Features */
+.features-container {
+  overflow: hidden;
+  height: 668px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.features {
+  margin: 115px 0;
+}
+
+.features h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.feactures-info {
+  display: flex;
+}
+
+.feature {
+  text-align: center;
+  width: 25%;
+}
+
+.feature img {
+  height: 150px;
+}
+
+.feature h2 {
+  font-size: 30px;
+}
+
+.feature p {
+  margin: 0 auto;
+  color: gray;
+  width: 60%;
+}
+
+/* Offer */
+.background-offer-imgage {
+  background-image: url(./assets/offer.png);
+  height: 668px;
+}
+
+.background-offer-color {
+  overflow: hidden;
+  height: 100%;
+  background-color: rgba(255, 96, 96, 0.3) !important;
+}
+
+.info-offer {
+  text-align: center;
+  margin: 200px 0;
+  color: white;
+}
+
+.info-offer h1 {
+  font-size: 85px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.info-offer span {
+  color: red;
+}
+
+.info-offer p {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+/* About Us */
+.about-us {
+  overflow: hidden;
+  width: 100%;
+  height: 668px;
+  background-color: black;
+  color: white;
+}
+
+.info-about-us {
+  display: flex;
+  width: 80%;
+  text-align: center;
+  margin: 120px auto;
+}
+
+.info-about-us img {
+  height: 500px;
+  margin-right: 20px;
+}
+
+.text-about-us {
+  text-align: left;
+  margin: auto 0;
+}
+
+.text-about-us h1 {
+  font-size: 55px;
+  color: red;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.text-about-us p {
+  font-size: 20px;
 }

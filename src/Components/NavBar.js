@@ -1,20 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../assets/logo.png';
 
 const NavBar = () => {
-    return (
-        <div className='navbar'>
-            <img alt='Logo' src={logo}/>
+  const [navBar, setNavBar] = useState(false);
 
-            <nav class="navegacion">
-                <a href="#">Header</a>
-                <a href="#">Features</a>
-                <a href="#">Offer</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </nav>
-        </div>
-    )
-}
+  const changeBackgroundNavBar = () => {
+    if (window.scrollY >= 70) {
+      setNavBar(true);
+    } else {
+      setNavBar(false);
+    }
+  };
 
-export default NavBar
+  window.addEventListener('scroll', changeBackgroundNavBar);
+
+  return (
+    <nav className={`navbar-background ${navBar ? 'background-nav' : ''}`}>
+      <div className="navbar">
+        <img alt="Logo" src={logo} />
+
+        <nav class="navegacion">
+          <a href="/">Header</a>
+          <a href="/">Features</a>
+          <a href="/">Offer</a>
+          <a href="/">About</a>
+          <a href="/">Contact</a>
+        </nav>
+      </div>
+    </nav>
+  );
+};
+
+export default NavBar;
