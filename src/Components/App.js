@@ -3,7 +3,8 @@ import NavBar from './NavBar';
 import Header from './Header';
 import Features from './Features';
 import Offer from './Offer';
-import AboutUs from './AboutUs'
+import AboutUs from './AboutUs';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Features />
       <Offer />
       <AboutUs />
+      <Contact />
     </div>
   );
 }

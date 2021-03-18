@@ -2,8 +2,8 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <header>
-            <div className='background'>
+        <header id="header">
+            <div className='background-header'>
                 <div className='info'>
                     <h2>Step up your</h2>
                     <h1><span>Fitness</span> with us</h1>

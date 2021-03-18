@@ -22,6 +22,7 @@ code {
   height: 66px;
   width: 100%;
   background: transparent;
+  transition: 0.6s ease-in-out;
 }
 
 .background-nav0 {
@@ -64,6 +65,12 @@ code {
   background-color: rgba(0, 0, 0, 1);
 }
 
+.background-nav:hover {
+  background-color: #000000;
+  box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+  transition: all ease 0.2s;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -76,14 +83,15 @@ code {
   align-items: center;
 }
 
-.navegacion a {
+.navegacion li {
+  list-style: none;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
   padding: 10px 20px;
 }
 
-.navegacion a:hover {
+.navegacion li:hover {
   border-radius: 3px;
   background-color: red;
 }
@@ -94,7 +102,7 @@ header {
   height: 668px;
 }
 
-.background {
+.background-header {
   overflow: hidden;
   height: 100%;
   background-color: rgba(255, 96, 96, 0.3) !important;
@@ -154,7 +162,7 @@ header {
 }
 
 .features {
-  margin: 115px 0;
+  margin: 100px 0;
 }
 
 .features h1 {
@@ -162,13 +170,25 @@ header {
   font-size: 50px;
 }
 
-.feactures-info {
+.features-info {
+  width: 96%;
+  margin: 0 auto;
   display: flex;
 }
 
 .feature {
+  padding: 20px 0;
+  margin-right: 5px;
   text-align: center;
-  width: 25%;
+  width: 24%;
+}
+
+.feature:last-child {
+  margin-right: 0;
+}
+
+.feature:hover {
+  box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
 }
 
 .feature img {
@@ -253,4 +273,49 @@ header {
 
 .text-about-us p {
   font-size: 20px;
+}
+
+/* Contact */
+.contact {
+  overflow: hidden;
+  width: 100%;
+  height: 668px;
+  background-color: black;
+  color: white;
+}
+
+.info-contact {
+  text-align: center;
+  margin: 150px 0;
+}
+
+.info-contact h1 {
+  text-transform: uppercase;
+  font-size: 55px;
+}
+
+.input-contact {
+  background-color: rgb(95, 95, 95);
+  border: none;
+  border-radius: 5px;
+  width: 500px;
+  height: 45px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.info-contact textarea {
+  background-color: rgb(95, 95, 95);
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  width: 500px;
+  height: 80px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+}
+
+.btn-contact {
+  background-color: red !important;
+  width: 510px;
 }

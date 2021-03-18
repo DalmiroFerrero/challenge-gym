@@ -2,7 +2,7 @@ import React from 'react';
 
 const Offer = () => {
   return (
-    <div className="background-offer-imgage">
+    <div id="offer" className="background-offer-imgage">
       <div className="background-offer-color">
         <div className="info-offer">
           <h1>

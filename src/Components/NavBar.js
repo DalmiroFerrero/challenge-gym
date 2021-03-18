@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import logo from '../assets/logo.png';
 
 const NavBar = () => {
@@ -17,15 +18,37 @@ const NavBar = () => {
   return (
     <nav className={`navbar-background ${navBar ? 'background-nav' : ''}`}>
       <div className="navbar">
-        <img alt="Logo" src={logo} />
+        <Link to="header" smooth={true} duration={1000}>
+          <img alt="Logo" src={logo} />
+        </Link>
 
-        <nav class="navegacion">
-          <a href="/">Header</a>
-          <a href="/">Features</a>
-          <a href="/">Offer</a>
-          <a href="/">About</a>
-          <a href="/">Contact</a>
-        </nav>
+        <ul class="navegacion">
+          <li>
+            <Link to="header" smooth={true} duration={1000}>
+              Header
+            </Link>
+          </li>
+          <li>
+            <Link to="features" smooth={true} duration={1000}>
+              Features
+            </Link>
+          </li>
+          <li>
+            <Link to="offer" smooth={true} duration={1000}>
+              Offer
+            </Link>
+          </li>
+          <li>
+            <Link to="about" smooth={true} duration={1000}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" smooth={true} duration={1000}>
+              Contact
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );

@@ -34,10 +34,10 @@ const Features = () => {
   ];
 
   return (
-    <div className="features-container">
+    <div id="features" className="features-container">
       <div className="features">
         <h1>Features</h1>
-        <div className="feactures-info">
+        <div className="features-info">
           {features.map((feature) => (
             <Feature feature={feature} />
           ))}
