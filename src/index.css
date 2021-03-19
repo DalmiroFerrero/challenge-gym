@@ -25,57 +25,22 @@ code {
   transition: 0.6s ease-in-out;
 }
 
-.background-nav0 {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.background-nav1 {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.background-nav2 {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.background-nav3 {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.background-nav4 {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.background-nav5 {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.background-nav6 {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.background-nav7 {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.background-nav8 {
-  background-color: rgba(0, 0, 0, 0.9);
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .background-nav {
   background-color: rgba(0, 0, 0, 1);
+  transition: 0.6s ease-in-out;
 }
 
 .background-nav:hover {
   background-color: #000000;
   box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
   transition: all ease 0.2s;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 1000px;
 }
 
 .navegacion {
@@ -94,6 +59,90 @@ code {
 .navegacion li:hover {
   border-radius: 3px;
   background-color: red;
+}
+
+.icon-bars {
+  display: none;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1360px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .navbar-background-menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 280px;
+    width: 100%;
+    background: transparent;
+    transition: 0.6s ease-in-out;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .navegacion {
+    display: none;
+  }
+
+  .icon-bars {
+    display: block;
+  }
+
+  .icon-bars {
+    color: white;
+    font-size: 40px;
+    position: relative;
+    right: -240px;
+  }
+
+  .icon-bars svg {
+    margin-top: 15px;
+  }
+
+  .navegacion {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 50px;
+    left: -190px;
+  }
+
+  .navegacion li {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 10px 146px;
+    width: 80px;
+  }
+
+  .navegacion li:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /* Header */
@@ -139,6 +188,51 @@ header {
   color: white;
   font-weight: 300;
   text-transform: capitalize;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  header {
+    background-image: url(./assets/banner.png);
+    height: 668px;
+    background-position: center center;
+  }
+
+  .info h1 {
+    font-size: 65px;
+    margin: 0;
+  }
+
+  .info h2 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .info h3 {
+    font-size: 15px;
+    margin: 10px 0 0 0;
+    font-weight: 300;
+  }
+
+  .btn {
+    font-size: 20px !important;
+    margin: 20px 0 0 0;
+    padding: 15px 30px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  header {
+    background-image: url(./assets/banner.png);
+    height: 668px;
+    background-position: center center;
+  }
+
+  .info h1 {
+    font-size: 45px;
+    margin: 0;
+  }
 }
 
 .btn {
@@ -205,6 +299,103 @@ header {
   width: 60%;
 }
 
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .features {
+    margin: 90px 0;
+  }
+  
+  .feature {
+    padding: 20px 0;
+    margin-right: 5px;
+    text-align: center;
+    width: 24%;
+  }
+  
+  .feature:last-child {
+    margin-right: 0;
+  }
+  
+  .feature:hover {
+    box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+  }
+  
+  .feature img {
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .feature h2 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  .feature p {
+    font-size: 15px;
+    margin: 0 auto;
+    color: gray;
+    width: 60%;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .features-container {
+    overflow: hidden;
+    height: 968px;
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+
+  .features-info {
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .features {
+    overflow: hidden;
+    margin: 55px 0;
+  }
+  
+  .feature {
+    padding: 20px 0;
+    margin-right: 0;
+    text-align: center;
+    width: 45%;
+  }
+  
+  .feature:last-child {
+    margin-right: 0;
+  }
+  
+  .feature:hover {
+    box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+  }
+  
+  .feature img {
+    height: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .feature h2 {
+    font-size: 20px;
+  }
+  
+  .feature p {
+    font-size: 15px;
+    margin: 0 auto;
+    color: gray;
+    width: 60%;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {}
+
 /* Offer */
 .background-offer-imgage {
   background-image: url(./assets/offer.png);
@@ -236,6 +427,43 @@ header {
 .info-offer p {
   text-transform: capitalize;
   font-size: 25px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .background-offer-imgage {
+    background-image: url(./assets/offer.png);
+    background-position: center center;
+    height: 668px;
+  }
+  
+  .info-offer h1 {
+    font-size: 65px;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+  
+  .info-offer p {
+    font-size: 20px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .background-offer-imgage {
+    background-image: url(./assets/offer.png);
+    background-position: center center;
+    height: 668px;
+  }
+  
+  .info-offer h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+  
+  .info-offer p {
+    font-size: 15px;
+  }
 }
 
 /* About Us */
@@ -275,12 +503,85 @@ header {
   font-size: 20px;
 }
 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .about-us {
+    overflow: hidden;
+    width: 100%;
+    height: 668px;
+    background-color: black;
+    color: white;
+  }
+  
+  .info-about-us {
+    display: flex;
+    width: 90%;
+    text-align: center;
+    margin: 134px auto;
+  }
+  
+  .info-about-us img {
+    height: 400px;
+    margin-right: 0;
+  }
+  
+  .text-about-us {
+    text-align: left;
+    margin: auto 0;
+  }
+  
+  .text-about-us h1 {
+    font-size: 45px;
+    color: red;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+  
+  .text-about-us p {
+    font-size: 15px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .about-us {
+    overflow: hidden;
+    width: 100%;
+    height: 768px;
+    background-color: black;
+    color: white;
+  }
+  
+  .info-about-us {
+    display: block;
+    width: 85%;
+    text-align: center;
+    margin: 46px auto;
+  }
+  
+  .info-about-us img {
+    height: 350px;
+    margin-right: 0;
+  }
+  
+  .text-about-us {
+    text-align: center;
+    margin: auto 0;
+  }
+  
+  .text-about-us h1 {
+    font-size: 45px;
+    color: red;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+}
+
 /* Contact */
 .contact {
   overflow: hidden;
   width: 100%;
   height: 668px;
-  background-color: black;
+  background-color: rgb(168, 156, 156);
   color: white;
 }
 
@@ -318,4 +619,52 @@ header {
 .btn-contact {
   background-color: red !important;
   width: 510px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .contact {
+    overflow: hidden;
+    width: 100%;
+    height: 495px;
+    background-color: rgb(168, 156, 156);
+    color: white;
+  }
+  
+  .info-contact {
+    text-align: center;
+    margin: 50px 0;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .contact {
+    overflow: hidden;
+    width: 100%;
+    height: 495px;
+    background-color: rgb(168, 156, 156);
+    color: white;
+  }
+  
+  .info-contact {
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  .info-contact h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+  }
+  
+  .input-contact {
+    width: 370px;
+  }
+  
+  .info-contact textarea {
+    width: 370px;
+  }
+  
+  .btn-contact {
+    width: 380px;
+  }
 }
